@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e67ad889-0b7c-486c-9e9a-d9c927590232" name="Default Changelist" comment="" />
+    <list default="true" id="e67ad889-0b7c-486c-9e9a-d9c927590232" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/actions/UserActionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/actions/UserActionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/data/IUser.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/data/IUser.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/data/RestDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/data/RestDataSource.ts" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TW5Qvd7pgbzr9upP4Hxi0Gcrco" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-redux-typescript-demo-master" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -49,10 +61,22 @@
       <workItem from="1573562999653" duration="883000" />
       <workItem from="1573563913662" duration="15202000" />
       <workItem from="1573644445759" duration="16884000" />
+      <workItem from="1573760413949" duration="2309000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

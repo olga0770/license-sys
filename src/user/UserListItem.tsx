@@ -10,8 +10,8 @@ const UserListItem: React.SFC<IProps> = props => {
   const { user } = props;
 
   return (
-    <li key={user.name} className="list-group-item">
-      {user.name}
+    <li key={user.username} className="list-group-item">
+      {user.username}
     </li>
   );
 };

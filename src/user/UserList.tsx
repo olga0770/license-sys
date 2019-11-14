@@ -16,7 +16,7 @@ const UserList: React.SFC<IProps> = props => {
     <ul className="list-group">
       {users && users.map(user => {
         return (
-            <UserListItem key={user.name} user={user} />
+            <UserListItem key={user.username} user={user} />
         );
       })}
     </ul>

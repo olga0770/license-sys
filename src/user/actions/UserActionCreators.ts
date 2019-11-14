@@ -24,7 +24,7 @@ export const getUsersStart = (): IGetUsersStartAction => {
 export const getUsersSuccess = (data: any): IGetUsersSuccessAction => {
   return {
     type: UserActionTypes.GET_USERS_SUCCESS,
-    users: data.results,
+    users: data._embedded.users,
     isFetching: false,
   };
 }
@@ -49,7 +49,6 @@ export const getUsers: ActionCreator<
     dispatch(getUsersStart());
     const dataSource: RestDataSource = new RestDataSource();
 
-    // mock test getUsers() <-> getUserMock()
     return dataSource.getUsers()
       .then((response) => {
         dispatch(getUsersSuccess(response.data));
