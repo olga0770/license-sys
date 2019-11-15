@@ -9,14 +9,15 @@ interface IProps {
 export class UserCreate extends React.Component<IProps, {value: IUser}> {
 
     componentWillMount() {
-        this.setState({value: {username: '', partnerid: {name: ''}}});
+        this.setState({value: {username: ''}});
         this._onChangeHandler = this._onChangeHandler.bind(this);
         this._onSubmitHandler = this._onSubmitHandler.bind(this);
     }
 
     _onChangeHandler(event: React.ChangeEvent) {
         const input = (event.target as HTMLInputElement).value;
-        this.setState({ value: {username: input, partnerid: {name: input}} });
+        console.log("_onChangeHandler - INPUT:" + input);
+        this.setState({ value: {username: input} });
     }
 
     _onSubmitHandler = (event: React.FormEvent) => {

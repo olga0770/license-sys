@@ -10,6 +10,9 @@ export class RestDataSource {
   }
 
   createUser(user: any): Promise<any> {
-    return axios.post(`http://localhost:8080/users/`, {user});
+    console.log(user);
+  //  var body = {"user": {"username":user.username, "partnerid" : "1"} };
+    var body = { "username":user.value.username, "partnerid" : "1"};
+    return axios.post(`http://localhost:8080/users/`, body);
   }
 }

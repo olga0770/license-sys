@@ -21,9 +21,9 @@ const UserList: React.SFC<IProps> = props => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {users && users.map(user => {
+            {users && users.map((user, index) => {
               return (
-                  <TableRow key={user.username}>
+                  <TableRow key={index}>
                     <TableCell>
                         <Link to={`users/${user.username}`}>{user.username}</Link>
                       {/*<UserListItem key={user.username} user={user} />*/}
