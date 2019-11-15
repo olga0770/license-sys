@@ -1,4 +1,3 @@
-// Third-Party dependencies
 import {
   applyMiddleware,
   combineReducers,
@@ -17,7 +16,6 @@ const rootReducer = combineReducers<IAppState>({
   userState: UserReducer,
 });
 
-// Create a configure store function of type `IAppState`
 export default function configureStore(): Store<IAppState, any> {
   const store = createStore(
                   rootReducer,

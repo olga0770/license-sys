@@ -14,9 +14,10 @@ const initialUserState: IUserState = {
 
 const UserReducer: Reducer<IUserState, UserActions> = (
   state = initialUserState,
-  action
-) => {
+  action) => {
   switch (action.type) {
+
+
     case UserActionTypes.GET_USERS_START: {
       return {
         ...state,
@@ -36,6 +37,30 @@ const UserReducer: Reducer<IUserState, UserActions> = (
         isFetching: action.isFetching,
       };
     }
+
+
+    case UserActionTypes.CREATE_USER_START: {
+      return {
+        ...state,
+        isFetching: action.isFetching,
+      };
+    }
+    case UserActionTypes.CREATE_USER_SUCCESS: {
+      return {
+        ...state,
+        users: action.users,
+        isFetching: action.isFetching,
+      };
+    }
+    case UserActionTypes.CREATE_USER_FAILURE: {
+      return {
+        ...state,
+        isFetching: action.isFetching,
+      };
+    }
+
+
+
     default:
       return state;
   }

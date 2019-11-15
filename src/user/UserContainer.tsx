@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import IAppState from '../store/IAppState.interface';
 import IUser from './data/IUser.interface';
 import {
+  createUser,
   getUsers,
   searchUsers
 } from './actions/UserActionCreators';
@@ -12,6 +13,7 @@ import { UserSearch } from './UserSearch';
 import NavigationBar from './NavigationBar';
 import Loader from './Loader';
 import {Container, CssBaseline} from "@material-ui/core";
+import {UserCreate} from "./UserCreate";
 
 
 // Define available props
@@ -19,6 +21,7 @@ import {Container, CssBaseline} from "@material-ui/core";
 interface IProps {
   getUsers: any,
   searchUsers: any,
+  createUser: any,
   users: IUser[],
   isFetching: Boolean
 }
@@ -35,6 +38,7 @@ export class UserContainer extends React.Component<IProps> {
     const {
       users,
       searchUsers,
+      createUser,
       isFetching
     } = this.props;
 
@@ -46,6 +50,8 @@ export class UserContainer extends React.Component<IProps> {
             <NavigationBar>
               <UserSearch searchUsers={searchUsers} />
             </NavigationBar>
+
+            <UserCreate createUser={createUser} />
 
             { isFetching ? (
                 <Loader></Loader>
@@ -72,6 +78,7 @@ const mapDispatchToProps = (dispatch: any) => {
   return {
     getUsers: () => dispatch(getUsers()),
     searchUsers: (term: String) => dispatch(searchUsers(term)),
+    createUser: (user: any) => dispatch(createUser(user)),
   }
 }
 
