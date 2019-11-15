@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e67ad889-0b7c-486c-9e9a-d9c927590232" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/UserCreate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserCreate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/data/IUser.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/data/IUser.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/data/RestDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/data/RestDataSource.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -16,7 +16,6 @@ export class UserCreate extends React.Component<IProps, {value: IUser}> {
 
     _onChangeHandler(event: React.ChangeEvent) {
         const input = (event.target as HTMLInputElement).value;
-        console.log("_onChangeHandler - INPUT:" + input);
         this.setState({ value: {username: input} });
     }
 
